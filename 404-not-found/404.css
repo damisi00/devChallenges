@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+}
+
+header{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-left: 77px;
+    margin-top: 40px;
+}
+
+header, button{
+    text-transform: uppercase;
+}
+
+header, main h1, button{
+    font-weight: 700;
+}
+
+main{
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin: 200px 119px 308px 77px;
+}
+
+.scarecrow{
+    /* width: 539.22px; */
+   width: fit-content;
+    /* height: 414.25px; */
+}
+
+.scarecrow img{
+    width: 100%;
+}
+
+main h1{
+    font-size: 64px;
+    line-height: 95px;
+    color: #333;
+}
+
+main p{
+    color: #4f4f4f;
+    font-size: 24px;
+    font-weight: 400;
+    padding:36px 0 64px;
+    width: 70%;
+    letter-spacing: -0.035em;
+}
+
+.text{
+    /* width: 586px; */
+    width: fit-content;
+    padding-left: 2.5rem;
+}
+
+button{
+    background-color: #333;
+    color: #fff;
+    padding: 24px 43px;
+    border: transparent;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+footer, a{
+    color: #bdbdbd;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+footer{
+    margin-bottom: 24px;
+}
+
+@media (min-width: 769px) and (max-width: 1065px){
+    main{
+        margin:120px 55px;
+    }
+}
+
+@media (max-width: 769px){
+    header{
+        margin:20px 0 0 24px ;
+    }
+    .scarecrow{
+        padding: 64px 0 77px;
+        width: 90%;
+        padding-right: 24px;
+        height: auto;
+    }
+    main{
+        margin: 64px 1px 114px 24px;
+        flex-direction: column;
+    }
+    main h1{
+        font-size: 48px;
+        line-height: 71px;
+    }
+    main p{
+        font-size: 18px;
+        padding: 30px 24px 66px 0;
+        width: 100%;
+    }
+    .text{
+        width: auto;
+        padding-left: 0;
+    }
+}
